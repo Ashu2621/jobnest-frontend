@@ -23,9 +23,9 @@ function App() {
     formData.append("job_text", job);
 
     try {
-      const res = await axios.post(
-        process.env.REACT_APP_BACKEND_URL + "/api/ml/match",
-        formData
+     const res = await axios.post(
+  "https://jobnest-backend-du73.onrender.com/api/ml/match",
+  formData
       );
 
       setResult(res.data);
